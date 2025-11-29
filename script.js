@@ -24,9 +24,9 @@ function openPopup(memesArray) {
   document.getElementById("popup").style.display = "flex";
 
   let html = "";
-  memesArray.forEach(img => {
+  memesArray.forEach(imgName => {
     html += `
-      <img src="${img}" style="
+      <img src="${imgName}" style="
         width: 45%;
         margin: 10px;
         border-radius: 12px;
