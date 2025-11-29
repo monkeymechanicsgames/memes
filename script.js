@@ -1,9 +1,7 @@
 // LIST OF ALL MEMES — JUST ADD MORE FILENAMES
 const memeImages = [
   "warriorcats.png",
-  // "meme2.png",
-  // "meme3.jpg",
-  // keep adding...
+
 ];
 
 // AUTO-GENERATE 3-per-row IMAGE GRID
