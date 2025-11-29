@@ -1,7 +1,7 @@
 const memeImages = [
   {
     preview: "warriorcats.png",  // This is the grid image you click
-    memes: ["m1.png", "m2.png", "m3.png", "m4.png"] // These 4 images show in the popup
+    memes: ["warriorcats-1.png", "warriorcats-2.png", "warriorcats-3.png", "warriorcats-4.png"] // These 4 images show in the popup
   }
 ];
 
