@@ -1,7 +1,8 @@
-// LIST OF ALL MEMES — JUST ADD MORE FILENAMES
 const memeImages = [
-  "warriorcats.png",
-
+  {
+    preview: "warriorcats.png",  // This is the grid image you click
+    memes: ["m1.png", "m2.png", "m3.png", "m4.png"] // These 4 images show in the popup
+  }
 ];
 
 // AUTO-GENERATE 3-per-row IMAGE GRID
