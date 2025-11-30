@@ -1,3 +1,4 @@
+
 // Array with preview + 4 memes
 const memeImages = [
   {
@@ -12,23 +13,32 @@ const memeImages = [
 
   {
     preview: "roblox.png",
-    memes: [] // put memes here when you add them
+    memes: [] // No memes yet
   }
 ];
 
+// Wait until HTML loads
+document.addEventListener("DOMContentLoaded", () => {
+  const grid = document.getElementById("imageGrid");
 
-const grid = document.getElementById("imageGrid");
+  memeImages.forEach(pack => {
+    const img = document.createElement("img");
+    img.src = pack.preview;
+    img.alt = "Meme Pack";
+    img.style.width = "200px";
+    img.style.borderRadius = "12px";
+    img.style.cursor = "pointer";
+    img.style.boxShadow = "0 4px 12px rgba(0,0,0,0.25)";
 
-memeImages.forEach(pack => {
-  const img = document.createElement("img");
-  img.src = pack.preview;
-  img.alt = "Meme Pack";
-  img.style.width = "200px";
-  img.style.borderRadius = "12px";
-  img.style.cursor = "pointer";
-  img.style.boxShadow = "0 4px 12px rgba(0,0,0,0.25)";
-  img.onclick = () => openPopup(pack.memes); // PASS THE ARRAY ONLY
-  grid.appendChild(img);
+    // Only open popup if memes exist
+    img.onclick = () => {
+      if (pack.memes.length > 0) {
+        openPopup(pack.memes);
+      }
+    };
+
+    grid.appendChild(img);
+  });
 });
 
 function openPopup(memesArray) {
