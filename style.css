@@ -16,6 +16,7 @@ header {
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
+
 /* 3-per-row grid */
 #imageGrid {
   display: grid;
@@ -23,6 +24,22 @@ header {
   gap: 20px;
   margin-top: 30px;
   justify-items: center;
+}
+
+/* Make sure images inside the grid are squares */
+#imageGrid img {
+  width: 200px;         /* JS already sets this, but CSS ensures fallback */
+  height: 200px;        /* force height */
+  object-fit: cover;    /* fills square */
+  display: block;       /* prevents stretching in some grids */
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: transform 0.15s;
+}
+
+#imageGrid img:hover {
+  transform: scale(1.05);
 }
 
 /* Images */
