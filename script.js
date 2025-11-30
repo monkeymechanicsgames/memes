@@ -3,8 +3,12 @@ const memeImages = [
   {
      preview: "warriorcats.png",  // This is the grid image you click
     memes: ["warriorcats-1.png", "warriorcats-2.png", "warriorcats-3.png", "warriorcats-4.png"] // These 4 images show in th
-     preview: "roblox.png", 
+     
   }
+  {
+     preview: "roblox.png",
+
+
 ];
 
 const grid = document.getElementById("imageGrid");
